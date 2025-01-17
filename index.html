@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=egde">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova studio</title>
+</head>
+
+
+<body>
+    <nav>
+    <header>
+        <div class="principale">
+            <div class="logo"> <a href="#"><span>NOVA</span> STUDIO </a> </div>
+            <div class="menu-toggle">☰</div>
+<div class=menutoggle onclick="toggleMenu();"></div>
+<ul>
+    <li class="active"><a href="index.html">Acceuil</a></li>
+    <li><a href="#Menu" onclick="toggleMenu();">biblioteque</a></li>
+    <li><a href="#apropos"onclick="toggleMenu();">a propos de nous</a></li>
+    <li><a href="#equipe"onclick="toggleMenu();">notre equipe</a></li>
+    <li><a href="resource.html">RESOURCE</a></li>
+
+</nav>
+
+
+
+
+<section class="title" id="title">
+    <div class="titre">
+    <h1> NOVA STUDIO </h1>
+</div>
+        <div class="slogan"><h2>Play Is Therapy.</h2></div>
+    
+    <div class="bouton">
+        <a href="decouvrire.html" class="btn">DECOUVRIR</a>
+        <a href="site%202.html" class="btn">JOUER MAINTENANT</a>
+    </div>
+</section>
+
+
+
+<section class="apropos" id="apropos">
+    <div class="row">
+        <div clas="col50">
+            <h2 class="titre-texte"><span>A</span> propos de nous</h2>
+            <p>
+            Nova est une entreprise crée par cinq jeunes entrepreneurs, diplomés de la grande
+    école d'ingénieurs EPITA. Tous passionnés par le jeu vidéo et la psychologie, nous nous
+sommes réunis un beau jour,pour nous questionner sur la maniere d'allier plaisir et r'éflexion.
+C'est ainsi qu'est née Nova Studio. Notre objectif est de rassembler les joueurs autour
+d'un sentiment commun de détente, mais aussi d'introspection. Nous souhaitons offrir a
+nos utilisateurs une exp'erience de jeu qui les incite a une certaine remise en question
+personnelle, grace a des mécaniques intéegrant une dimension psychologique.
+        </p>
+    </div>
+    <div class="col50">
+        <div class="img">
+            <img src="logo.png" alt="image">
+        </div>
+    </div>
+</div>
+    </section>
+
+<section class="menu" id="Menu">
+    <h1 class="Nosjeux">Jeux à l'affiche</h1>
+     <section class="hero-section">
+        <a href="#" class="card-container" onclick="handleCardClick(1)">
+            <div class="card">
+                <div class="card-background" style="background-image: url(4.png);"></div>
+                <div class="content">
+                    <div class="card-category">1er jeux</div>
+                   
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="card-container" onclick="handleCardClick(2)">
+            <div class="card">
+                <div class="card-background" style="background-image: url(1.png);"></div>
+                <div class="content">
+                    <div class="card-category">2eme jeux</div>
+                    
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="card-container" onclick="handleCardClick(3)">
+            <div class="card">
+                <div class="card-background" style="background-image: url(2.png);"></div>
+                <div class="content">
+                    <div class="card-category">3eme jeux</div>
+                    
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="card-container" onclick="handleCardClick(4)">
+            <div class="card">
+                <div class="card-background" style="background-image: url(3.png);"></div>
+                <div class="content">
+                    <div class="card-category">4eme jeux</div>
+                    
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <section class="equipe" id="equipe">
+        <div class="titreEQ">
+            <h2 class="titreEQ-texte"><span>N</span>otre equipe</span></h2>
+            <p>l'equipe soudée de nova studio</p>
+        </div>
+        <div class="contenuEQ">
+            <div class="box">
+                <div class="imbox">
+                    <img src="./rayan.png">
+                </div>
+                <div class="biography">
+                    <h3>Responsable IA  & développeur web</h3>
+                    <p> </p>
+                </div>
+                <div class="texteq">
+                    <h3>Rayan NOUIR MAHJOUB</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./timeo.png">
+                </div>
+                <div class="biography">
+                    <h3>Chef de Projet & Graphiste</h3>
+                    <p> </p>
+                </div>
+                <div class="texteq">
+                    <h3>Timéo ABSALON-LHERITIER</h3>
+                </div>
+        </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./luca.png">
+                </div>
+                <div class="biography">
+                    <h3>Programmeur Gameplay</h3>
+                    <p> </p>
+                </div>
+                <div class="texteq">
+                    <h3>luca MACHEDA</h3>
+                </div>
+        </div>
+            
+            <div class="box">
+                <div class="imbox">
+                    <img src="./tao.png">
+                </div>
+                <div class="biography">
+                    <h3>Responsable Infrastructure Multijoueur</h3>
+                    <p> </p>
+                </div>
+                <div class="texteq">
+                    <h3>Tao BROUTA-BESSET</h3>
+                </div>
+        </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./noe.png">
+             </div>
+             <div class="biography">
+                <h3>Game designer</h3>
+                <p> </p>
+            </div>
+        
+             <div class="texteq">
+                <h3>Noe DUNY-TRUBLIN</h3>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+
+       
+
+
+
+
+</section>
+</section>
+
+<footer>
+
+<div class="contacte" id="co">
+    <div class="text">
+    <p>nous contacter +33 7 82 42 57 77 </p>
+    <p>email :  novastudio.creators@gmail.com </p>
+    <p>Adresse :  <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x47e6716733ab498d:0xaabd7803cd0f5edb?sa=X&ved=1t:8290&ictx=111">66 Rue Guy Môquet 94800 Villejuif </a></p>
+    </div>
+    
+    <div class="share">
+            <span>share</span>
+            <nav>
+                <a href="https://www.instagram.com/nova.studio_creators/"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://x.com/?lang=fr"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dfr_FR"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </nav>
+            </div>
+        </div>
+
+</div>
+</footer>
+
+
+
+
+<script type="text/javascript">
+
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        const nav = document.querySelector('nav ul');
+        nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+    });
+
+
+    window.addEventListener('scroll',function(){
+        const header =document.querySelector('header');
+        header.classList.toggl("sticky",window.scrollY > 0);
+    });
+    
+   
+    
+function toggleMenu(){
+    const toggleMenu = document.querySelector('.menutoggle');
+    const navbar = document.querySelector('navbar');
+    menutoggle.classList.toggle('active');
+    navbar.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>

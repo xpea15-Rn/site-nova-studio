@@ -1,0 +1,61 @@
+:root {
+    --blue: #12d2db;
+    --white: #fcf2fa;
+    --purple: #912a7eaa;
+    --purple-blc: #230622dd;
+    --shadow: 0 5px 10px 5px rgba(0, 0, 0, .3);
+    --navColor: linear-gradient(to right, rgba(178, 47, 147, 6)5%, rgba(35,6,34,.9));
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+  }
+  
+  nav {
+    position: absolute;
+    background: var(--navColor);
+    box-shadow: var(--shadow);
+    height: 80px;
+    width: 100%;
+  }
+
+
+
+  label.logo {
+    color: var(--white);
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 80px;
+    letter-spacing: -1px;
+    font-style: italic;
+    text-shadow: 3px 5px 20px #230622aa;
+    transition: 2s ease;
+    width: 100%;
+  }
+  
+  nav ul {
+    float: right;
+    margin-right: 80px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+  }
+  
+  nav ul li a {
+    color: var(--white);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 13px;
+    text-transform: lowercase;
+  }
+  
+  a.active, a:hover {
+    background: var(--purple-blc);
+    transition: .5s;
+  }  

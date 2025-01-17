@@ -1,0 +1,979 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: century;
+}
+header
+{
+   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./862-fond_decran_dordinateur-art_fractal-lumiere-resume-effets_speciaux-1920x1080.jpg);
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+}
+
+.logo a 
+{
+color: #fff;
+padding: 0px 40px;
+
+position: absolute;
+top: 1%;
+left: 10px;
+text-transform: uppercase;
+text-decoration: none;
+font-weight: 900;
+text-shadow: rgba(0,0, 0, 0.7);
+
+}
+
+.logo span 
+{
+color: rgb(8, 219, 209);
+font-weight: bold;
+font-size: 2rem;
+}
+
+ul{
+   list-style: none;
+   float: right;
+   display: flex;
+margin-top: 20px;
+}
+
+ul li a {
+   text-decoration: none;
+   color: #fff ;
+   padding: 10px 20px;
+   text-transform: uppercase;
+   border: 1px solid transparent;
+   margin: 10px;
+   font-weight: 500;
+   transition: 0.6s ease;
+  
+}
+
+ul li a:hover {
+   background: #fff;
+   color: #000;
+}
+
+ul li.active a{
+background: #fff;
+color: #000;
+}
+
+.principale {
+   max-width: 114rem;
+   margin: 0 auto;
+}
+
+
+.titre {
+   position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+.titre h1 {
+   color: rgb(255, 255, 255);
+   font-size: 70px;
+}
+
+
+
+.slogan { position: absolute;
+   top: 60%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+
+}
+
+
+.slogan h2{
+   color: rgb(255, 255, 255);
+   font-size: 30px;
+   font-family: Didot, serif;
+}
+
+
+
+
+.bouton {
+   position: absolute;
+   top: 70%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   
+
+}
+
+.bouton a{
+   color: #fff;
+   text-decoration: none;
+   border: 1px solid #fff;
+   padding: 10px 20px ;
+}
+
+
+.btn {
+   transition: 00.6s ease;
+}
+
+
+.btn:hover{
+   background-color: #fff;
+   color: rgb(0, 0, 0);
+}
+
+section {
+   padding: 100px;
+}
+
+.row {
+   font-size: 2rem;
+   position: relative;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.row .col50 {
+
+   
+   position: relative;
+   width: 48%;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.row .col50 h2{
+   margin-bottom: 20px;
+}
+
+.titre-texte {
+   color: #ffffff;
+   font-size: 2em;
+   font-weight: 300;
+   text-transform: capitalize;
+}
+
+.titre-texte span {
+   color: rgb(0, 247, 255);
+   font-size: 1.5em;
+   font-weight: 700px;
+
+}
+
+
+
+
+
+
+
+
+
+.menu
+{
+   margin-top: -100px;
+
+}
+
+
+
+
+
+.menu .contenu .box .imbox img{
+   position: relative;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 300px;
+   object-fit: cover;
+}
+
+
+
+html {
+   height: 100%;
+   font-size: 14px;
+   font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+.hero-section {
+   display: flex;
+   min-height: 100%;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem;
+}
+
+.card-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 40px;
+   width: 100%;
+   justify-content: center;
+   padding: 20px;
+}
+
+.card {
+   position: relative;
+   list-style: none;
+   width: 220px;
+   transition: .3s ease;
+   margin: 0 15px;
+}
+.card::before
+{
+   content: "";
+   display: block;
+   padding-bottom: 150%;
+   width: 100%;
+}
+
+.card-background
+{
+position: absolute;
+bottom: 0;
+right: 0;
+left: 0;
+top: 0;
+border-radius: 20px;
+background-size: 350px;
+background-position: center;
+filter: brightness(.9) saturate(1) contrast(1);
+transform-origin: bottom;
+transform: scale(1) translateZ(0);
+transition: .3s ease;
+}
+.card:hover .card-background {
+   transform:  scale(1.15) translateZ(0);
+   background-size: 260px;
+}
+
+.card-container:hover .card:not(:hover){
+   transform: scale(.9);
+}
+
+.menu {
+   font-size: 1rem;
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.menu .nosjeux {
+   font-size: 6rem;
+
+}
+
+
+body {
+   font-family: 'Poppins', sans-serif;
+   background: linear-gradient(to left, #101e68,#460450);
+   text-align: center;
+   color:#35446d ;
+
+}
+
+
+
+.row{
+   color: #fff;
+
+}
+
+
+
+.Nosjeux {
+   color: #ffffff;
+}
+
+
+
+
+/* General Styles */
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html, body {
+   height: 100%;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+   background: linear-gradient(to left, #04bdc4,#041135);
+   text-align: center;
+   color: #35446d;
+}
+
+
+/* Footer Styles */
+footer {
+   background: linear-gradient(to left, #101e68,#460450);
+   color: #000000;
+   padding: 20px 0;
+   position: relative;
+   width: 100%;
+   bottom: 0;
+   font-size: 30px;
+}
+
+  .share {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -100px;
+    border-radius: 80px;
+
+
+  }
+  .share span {
+    width: 200px;
+    line-height: 80px;
+    display: inline-block;
+    font-weight: 600px;
+    letter-spacing: -1px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 1;
+    transition: all .3 ease;
+    pointer-events: none;
+  }
+
+.share nav{
+    font-size: 0;
+}
+
+
+
+.share a {
+    line-height: 80px;
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+    background-color: #ffffff;
+    overflow: hidden;
+    opacity: 1;
+    transition: all .3s ease;
+    margin: 0 -20px;
+    box-shadow: 3px 1px 3px 2px rgba(0, 0, 0, .05);
+  }
+
+
+  .share a:nth-child(1) {
+    border-top-left-radius: 30px ;
+    border-bottom-left-radius: 30px ;
+    margin-left: 0;
+  }
+
+
+
+  .share a:nth-child(1):hover {
+    background-color: #f75c54;
+    
+  }
+  
+  .share a:nth-child(2):hover {
+    background-color: #6ddafc;
+  }
+  
+
+  
+  .share a:nth-child(3) {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-right: 0;
+  }
+  
+  .share a:nth-child(3):hover {
+    background-color: #4e79c4;
+  }
+  
+.share:hover span,
+.share.hover span {
+    letter-spacing: 5px;
+    opacity: 0;
+  
+  }
+
+
+  .share:hover a,
+  .share.hover a {
+    border-radius: 40px;
+    margin: 0 10px;
+    color: #35446d;
+    font-size: 25px;
+  }
+
+
+.share.hover a:hover,
+.share.hover a:hover {
+    color: #fff;
+}
+
+
+.share {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 170%; /* Déplace la section vers le bas de 70% de la hauteur de la fenêtre */
+    left: 50%;
+    margin-left: -200px;
+    margin-top: 0;
+    border-radius: 80px;
+    transform: translateY(-50%); /* Ajoute un effet de centrage ajusté */
+}
+
+
+
+
+
+
+
+
+
+.titreEQ {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.equip {
+   margin-top: -100px
+}
+
+.menu .contenuEQ {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap ;
+   margin-top: 40px;
+}
+
+
+.menu .contenuEQ .box{
+   width: 350px;
+   margin: 30px;
+   border: 20px solid #2ba7a7;
+   box-shadow: 20px 15x 35px rgba(0, 0, 0, 0.8);
+
+}
+
+.menu .contenuEQ .box .imbox{
+   position: relative;
+   width: 80%;
+   height: 300px;
+}
+
+.menu .contenuEQ .box .imbox img{
+   position: relative;
+   top:0%;
+   left:0% ;
+   width: 100%;
+   height: 300px;
+   object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+.texteq{
+   color:#fff;
+}
+
+.titreEQ{
+   color: #fff;
+   size: 200px;
+}
+
+
+
+.contacte{
+   padding: 20px 40px;
+   border-top: 2px solid rgba(0, 0, 0, 0.1);
+   background: rgba(12, 189, 180, 0.8);
+}
+
+
+.contacte p:nth-child(1){
+   color:#333;
+  
+}
+
+
+
+
+@media (max-width:952) {
+   label.logo {
+      font-size: 25px;
+      padding-left:50px ;
+   }
+   nav ul li a {
+      font-size: 14px;
+   }
+}
+
+
+.btn1 {
+   font-size: 2em;
+   color:#fff ;
+   background: #1ecfc6;
+   display: inline-block;
+   margin-top: 20px;
+   text-transform: uppercase ;
+   text-decoration: none;
+   letter-spacing: 2px;
+   transition: 0.5s;
+   margin-left: 10px;
+}
+
+
+
+
+
+
+.btn1 {
+   width: 300px;
+   height: 100px;
+   border-radius: 80px;
+   position: relative;
+
+
+
+ }
+ .btn1 span {
+   width: 200px;
+   line-height: 90px;
+   display: inline-block;
+   font-weight: 000px;
+   letter-spacing: -1px;
+ }
+
+
+ /* Add these responsive styles */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero-section {
+        padding: 10px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 80%;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+
+    .contenuEQ {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+/* Share button animation */
+.share {
+    transition: transform 0.3s ease;
+}
+
+.share.hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+   /* Navigation fix */
+   nav ul {
+       display: none;
+       position: absolute;
+       top: 60px;
+       left: 0;
+       width: 100%;
+       background: rgba(0, 0, 0, 0.9);
+       flex-direction: column;
+       padding: 20px 0;
+       z-index: 1000;
+   }
+
+   nav ul.show {
+       display: flex;
+   }
+
+   /* Cards layout */
+   .hero-section {
+       flex-direction: column;
+       align-items: center;
+       gap: 20px;
+   }
+
+   .card-container {
+       width: 90%;
+       max-width: 300px;
+       margin: 10px auto;
+   }
+
+   /* Play is Therapy buttons */
+   .bouton {
+       display: flex;
+       flex-direction: column;
+       gap: 15px;
+       align-items: center;
+   }
+
+   .btn {
+       width: 200px;
+       text-align: center;
+   }
+}
+
+@media screen and (min-width: 769px) {
+   nav ul {
+       display: flex !important;
+   }
+
+   .menu-toggle {
+       display: none;
+   }
+
+   .hero-section {
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+}
+
+.hero-section {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;
+   padding: 20px;
+}
+
+.card-container {
+   flex: 0 1 220px;
+   margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+   .hero-section {
+       flex-direction: column;
+       align-items: center;
+   }
+   
+   .card-container {
+       width: 90%;
+       max-width: 300px;
+   }
+
+   .bouton {
+       display: flex;
+       flex-direction: column;
+       gap: 15px;
+       align-items: center;
+   }
+}
+
+@media screen and (min-width: 769px) {
+   .hero-section {
+       flex-direction: row;
+   }
+}
+
+
+
+/* Styles pour les photos de l'équipe */
+.box {
+   position: relative;
+   overflow: hidden;
+}
+
+.imbox {
+   position: relative;
+   transition: all 0.3s ease;
+}
+
+.biography {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   padding: 20px;
+   opacity: 0;
+   transition: all 0.3s ease;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   background: linear-gradient(to bottom, 
+       rgba(255, 255, 255, 0.9),
+       rgba(255, 255, 255, 0.7),
+       rgba(255, 255, 255, 0.4),
+       rgba(255, 255, 255, 0));
+   color: #000;
+}
+
+.box:hover .imbox {
+   opacity: 0.3;
+}
+
+.box:hover .biography {
+   opacity: 1;
+}
+
+.menu .contenuEQ .box {
+   width: 350px;
+   margin: 30px;
+   border-radius: 80px; /* Ajout des coins arrondis */
+   overflow: hidden; /* Pour s'assurer que l'image respecte les coins arrondis */
+   border: 20px solid #2ba7a7;
+   box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+   transition: all 0.3s ease; /* Animation fluide au survol */
+}
+
+.menu .contenuEQ .box .imbox {
+   position: relative;
+   width: 100%;
+   height: 300px;
+   overflow: hidden;
+   border-radius: 60px; /* Coins arrondis pour l'image */
+}
+
+.menu .contenuEQ .box .imbox img {
+   position: relative;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 60px; /* Coins arrondis pour l'image */
+}
+
+/* Animation au survol */
+.menu .contenuEQ .box:hover {
+   transform: translateY(-10px); /* Léger effet de flottement */
+}
+
+.biography {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   padding: 20px;
+   opacity: 0;
+   transition: all 0.3s ease;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   background: linear-gradient(to bottom, 
+       rgba(255, 255, 255, 0.9),
+       rgba(255, 255, 255, 0.7),
+       rgba(255, 255, 255, 0.4),
+       rgba(255, 255, 255, 0));
+   color: #000;
+   border-radius: 60px; /* Coins arrondis pour la biographie */
+}
+
+.box:hover .biography {
+   opacity: 1;
+}
+
+.texteq {
+   color: #fff;
+   padding: 15px;
+   border-radius: 0 0 60px 60px; /* Coins arrondis pour le texte */
+}
+
+
+.menu .contenuEQ .box {
+   width: 350px;
+   margin: 30px;
+   border-radius: 80px;
+   overflow: hidden;
+   border: 20px solid #2ba7a7;
+   box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+   transition: all 0.3s ease;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.menu .contenuEQ .box .imbox {
+   position: relative;
+   width: 100%;
+   height: 400px;
+   overflow: hidden;
+   border-radius: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.menu .contenuEQ .box .imbox img {
+   width: auto; /* Changé de 100% à auto */
+   height: 100%;
+   object-fit: cover; /* Retour à cover */
+   border-radius: 60px;
+}
+
+/* Correction du footer */
+.contacte {
+   padding: 20px 0; /* Réduit le padding horizontal */
+   border-top: 2px solid rgba(0, 0, 0, 0.1);
+   background: rgba(12, 189, 180, 0.8);
+   width: 100%;
+   margin: 0; /* Assure qu'il n'y a pas de marge */
+   box-sizing: border-box;
+}
+
+
+
+
+/* Animation du bouton Voir Plus */
+.btn1 {
+   font-size: 2em;
+   color: #fff;
+   background: #1ecfc6;
+   display: inline-block;
+   margin-top: 20px;
+   text-transform: uppercase;
+   text-decoration: none;
+   letter-spacing: 2px;
+   width: 300px;
+   height: 100px;
+   border-radius: 80px;
+   position: relative;
+   overflow: hidden;
+   transition: all 0.3s ease;
+}
+
+.btn1:hover {
+   transform: scale(1.1);
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+   background: #17a8a0;
+}
+
+.btn1 span {
+   width: 200px;
+   line-height: 90px;
+   display: inline-block;
+   font-weight: 600;
+   letter-spacing: 2px;
+   transition: all 0.3s ease;
+}
+
+.btn1:hover span {
+   transform: scale(1.05);
+   letter-spacing: 3px;
+}@media (max-width: 768px) {
+   .col50 .img {
+       display: none;  /* Cache le logo sur mobile */
+   }
+   
+   .apropos .row {
+       flex-direction: column;
+   }
+   
+   .apropos .row .col50 {
+       width: 100%;
+       text-align: left;  /* Aligne le texte à gauche */
+       padding: 20px;
+   }
+   
+   .titre-texte {
+       text-align: left;  /* Aligne le titre à gauche aussi */
+   }
+
+
+/* Style pour le texte en version mobile */
+@media (max-width: 768px) {
+   .col50 .img {
+       display: none;  /* Cache le logo */
+   }
+   
+   .apropos .row {
+       flex-direction: column;
+   }
+   
+   .apropos .row .col50 {
+       width: 100%;
+       max-width: 600px;  /* Limite la largeur du texte */
+       text-align: left;
+       padding: 20px;
+       margin: 0 auto;  /* Centre le bloc de texte */
+   }
+   
+   .apropos p {
+       line-height: 1.6;  /* Espacement des lignes */
+       margin-bottom: 15px;  /* Espace après le paragraphe */
+   }
+   
+   .titre-texte {
+       text-align: left;
+       margin-bottom: 20px;
+   }
+}}

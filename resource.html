@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova studio - Resources</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./862-fond_decran_dordinateur-art_fractal-lumiere-resume-effets_speciaux-1920x1080.jpg);
+            min-height: 100vh;
+            color: white;
+        }
+
+        nav {
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .principale {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: rgb(17, 231, 213);
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            color: #2cfff4;
+            border-color: #23f8dc;
+        }
+
+        .main-content {
+            text-align: center;
+            padding: 100px 20px;
+            margin-bottom: 50px;
+        }
+
+        .main-title {
+            font-size: 60px;
+            margin-bottom: 30px;
+            letter-spacing: 3px;
+            color: #6be9ff;
+        }
+
+        .main-subtitle {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 60px;
+            font-weight: 300;
+        }
+
+        .expandable-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .expandable-btn {
+            background: rgba(255, 107, 107, 0.1);
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 250px;
+            overflow: hidden;
+        }
+
+        .expandable-btn.expanded {
+            width: 300px;
+            background: rgba(255, 107, 107, 0.2);
+        }
+
+        .btn-title {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .btn-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .expanded .btn-content {
+            max-height: 500px;
+        }
+
+        .btn-content a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 0;
+            transition: 0.3s;
+        }
+
+        .btn-content a:hover {
+            color: #ffffff;
+            padding-left: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 40px;
+            }
+
+            .main-subtitle {
+                font-size: 20px;
+            }
+
+            .expandable-btn {
+                width: 100%;
+            }
+
+            .expandable-btn.expanded {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="principale">
+            <div class="logo">
+                <a href="#"><span>NOVA</span> STUDIO</a>
+            </div>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="main-content">
+        <h1 class="main-title">RESSOURCES</h1>
+        <p class="main-subtitle">Voici les ressources  utilisées pour le projet</p>
+    </section>
+
+    <div class="expandable-buttons">
+        <div class="expandable-btn" onclick="toggleExpand(this)">
+            <div class="btn-title">Sites de Jeux
+            </div>
+            <div class="btn-content">
+                <a href="https://store.steampowered.com">Steam</a>
+                <a href="https://www.epicgames.com">Epic Games</a>
+                <a href="https://www.gog.com">GOG</a>
+                <a href="https://www.ea.com/fr-fr">Electronic Arts</a>
+                <a href="https://www.nintendo.com/fr-fr/">nintendo</a>
+                
+                <a href="https://www.origin.com">Origin</a>
+            </div>
+        </div>
+
+        <div class="expandable-btn" onclick="toggleExpand(this)">
+            <div class="btn-title">Les Chaine Youtube</div>
+            <div class="btn-content">
+                <a href="https://www.youtube.com/@yaokevin">Yao Kevin</a>
+                <a href="https://www.youtube.com/@hellocodelab">Hello code</a>
+                <a href="https://www.youtube.com/c/TUTOUNITYFR">TUTO unity FR</a>
+                <a href="https://www.youtube.com/@onewheelstudio">One Wheel Studio</a>
+                <a href="https://www.youtube.com/@unitypourlesnuls">Unity Pour les nuls</a>
+                <a href="https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA">Brackeys</a>
+            </div>
+        </div>
+
+        <div class="expandable-btn" onclick="toggleExpand(this)">
+            <div class="btn-title">les applications</div>
+            <div class="btn-content">
+                <a href="https://assetstore.unity.com/">AssetStore </a>
+                <a href="https://unity.com/fr/download">Unity</a>
+                <a href="https://openai.com/index/chatgpt/">ChatGPT</a>
+                <a href="https://www.blender.org/">Blender</a>
+                <a href="https://www.canva.com/">Canva</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleExpand(element) {
+            element.classList.toggle('expanded');
+        }
+    </script>
+</body>
+</html>
